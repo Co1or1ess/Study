@@ -54,10 +54,6 @@ var uiController = (function() {
 
   return {
     displayDate: function() {
-      var unuudur = new Date();
-
-      document.querySelector(DOMstrings.dateLabel).textContent =
-        unuudur.getFullYear() + " оны " + unuudur.getMonth() + " сарын ";
     },
 
     changeType: function() {
@@ -74,7 +70,6 @@ var uiController = (function() {
       });
 
       document.querySelector(DOMstrings.addBtn).classList.toggle("red");
-      // location = "http://1234.mn/course";
     },
 
     getInput: function() {
